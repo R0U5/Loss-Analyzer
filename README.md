@@ -1,4 +1,4 @@
-# LossAnalyzer — Training Loss Curve Analyzer
+# LossAnalyzer - Training Loss Curve Analyzer
 
 A lightweight GUI/CLI tool to parse your training logs (JSON/JSONL), visualize loss curves, and compute actionable metrics like recent slope, robust noise (MAD), signal‑to‑noise ratio, exposure %, and early‑stop suggestions. Built with Tkinter + Matplotlib and designed to be forgiving about log formats.
 
