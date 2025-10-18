@@ -1,19 +1,5 @@
 
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-LossAnalyzer.py — cleaned & optimized
-
-Fixes / improvements:
-- Define Analyze handler (no NameError) and wire buttons correctly.
-- Remove emojis from titles/labels to avoid font warnings on Windows.
-- Robust JSON/JSONL parsing (accepts single-quoted dicts, JSONL, pasted blobs).
-- Actionable metrics: slope (last-N), MAD noise, SNR, best step, exposure %, LR info.
-- Safer smoothing: uses SciPy's uniform_filter1d if available; otherwise a fast moving average.
-- Clipboard export falls back gracefully if pyperclip isn't installed.
-- Clearer GUI structure; only builds Tk when not invoked in CLI mode.
-- CLI mode: `python LossAnalyzer.py path/to/log.jsonl` opens plot without GUI.
-"""
 import json
 import os
 import re
